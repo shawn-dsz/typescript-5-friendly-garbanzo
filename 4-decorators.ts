@@ -4,19 +4,23 @@
 //  5.0 brings them up to speed with the ecmascript proposal which is now in ⁡⁣⁣⁢stage 3⁡ meaning it's in the stage where it gets added to typescript
 
 export class SDK {
+
   public getUser(id: string) {
-    // returns from database
     return Promise.resolve({ id });
   }
+
   public getPost(id: string) {
-    // returns from database
-    return Promise.resolve({ id });
+    return Promise.resolve({ id });;
   }
 }
 
 const sdk = new SDK();
 
+sdk.getPost("123");
+
 // ^Imagine we want to log when the function is called also when it resolves
+
+
 // Step 1: Add console.log to the function
 // console.log(`user called with id ${id}`);
 // change to async
@@ -25,7 +29,7 @@ const sdk = new SDK();
 /*
   public async getUser(id: string) {
     console.log(`user called with id ${id}`);
-    const result = Promise.resolve({ id });
+    const result = await Promise.resolve({ id });
     console.log("get user finished");
     return result;
   }

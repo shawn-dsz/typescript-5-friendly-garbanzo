@@ -10,13 +10,25 @@ const routes = <const T>(routes: T[]) => {
   };
 };
 
+
+// const routes = <const T>(routes: T[]) => {
+//   const addRedirect = (from: T, to: T) => {
+//     // Implementation
+//   };
+
+//   return {
+//     addRedirect,
+//   };
+// };
+
 const router = routes(["/users", "/posts", "/admin/users"]);
 
-router.addRedirect("/admin/users", "/users");  
-
 // ^the function excepts any string.
-// !Switch to TS 4
+// !Without TS5
 // router.addRedirect("/admin/blah", "/users");  
+
+router.addRedirect("/admin/users", "/posts");  
+
 
 // adding const T
 // now the things that you pass into roots are going to be inferred as their literal
