@@ -1,7 +1,7 @@
 const log = (
   originalMethod: any,
   _context: any
-): any => {
+) => {
   return async function func(this: any, ...args: any[]) {
     console.log(`${_context.name} called with id ${JSON.stringify(args)}`);
     // lets us pass this into the original method meaning it doesn't lose the context of where it's called in this case in the
