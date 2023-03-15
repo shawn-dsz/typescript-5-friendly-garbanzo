@@ -1,7 +1,8 @@
 // *5. Decorators
 
-// decorators decorators have been around in typescript for a while under an ⁡⁣⁣⁢experimental flag⁡
-//  5.0 brings them up to speed with the ecmascript proposal which is now in ⁡⁣⁣⁢stage 3⁡ meaning it's in the stage where it gets added to typescript
+// ~ decorators decorators have been around in typescript for a while under an ⁡⁣⁣⁢experimental flag⁡
+// ~5.0 brings them up to speed with the ecmascript proposal which is now in ⁡⁣⁣⁢stage 3⁡
+// ~ meaning it's in the stage where it gets added to typescript
 
 export class SDK {
 
@@ -21,7 +22,7 @@ sdk.getPost("123");
 // ^Imagine we want to log when the function is called also when it resolves
 
 
-// Step 1: Add console.log to the function
+// & Step 1: Add console.log to the function
 // console.log(`user called with id ${id}`);
 // change to async
 // save result to variable
