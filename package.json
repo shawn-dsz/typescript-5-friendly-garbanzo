@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec ts-node 4-decorators.ts"
+    "start": "nodemon --exec ts-node src/4-decorators.ts"
   },
   "keywords": [],
   "author": "",
